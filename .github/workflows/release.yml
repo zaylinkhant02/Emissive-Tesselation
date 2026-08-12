@@ -1,4 +1,4 @@
-name: Release Tessellation Output
+name: Release Tessellation Executable
 
 on:
   workflow_dispatch:
@@ -13,7 +13,7 @@ on:
 
 jobs:
   build-and-release:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     permissions:
       contents: write
 
@@ -30,17 +30,17 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r requirements.txt pyinstaller
 
-      - name: Generate Output Image
+      - name: Build Executable
         run: |
-          python tessellation.py
+          pyinstaller --onefile tessellation.py
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ inputs.tag_name || github.ref_name }}
-          files: tessellation.png
+          files: dist/tessellation.exe
           name: Release ${{ inputs.tag_name || github.ref_name }}
           draft: false
           prerelease: false
