@@ -1,4 +1,4 @@
-# Emissive-octagon-square-tessellation
+# Emissive-Tesselation
 Y9 Individual Project - Python script that generates glowing geometric tessellation patterns using Matplotlib and NumPy.
 
 ---
