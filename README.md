@@ -1,5 +1,5 @@
 # Emissive-Tesselation
-Y9 Individual Project - Python script that generates a glowing geometric tessellation pattern using Matplotlib and NumPy.
+Y9 Individual Project - A Python script that generates a glowing geometric tessellation pattern using Matplotlib and NumPy.
 
 ---
 
