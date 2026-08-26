@@ -3,7 +3,7 @@ Y9 Individual Project - A short Python script that generates a glowing geometric
 
 ---
 
-This script creates a tessellation of octagons and squares arranged in a repeating pattern. Each shape is rendered with layered shading, shadows, and gradient-based coloring to produce a glowing effect.
+This script creates a tessellation of octagons and squares arranged in a repeating pattern. Each shape is rendered with shading, shadows, and gradient-based coloring to produce a glowing effect.
 
 ---
 
